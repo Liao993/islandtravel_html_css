@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Introduction</title>
+    <link rel="stylesheet" href="site.css" />
+
+    <!--joggle function-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("input").click(function () {
+          $("nav").toggle();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <!--menu button, title, logo,-->
+      <input
+        class="left"
+        type="image"
+        src="image/hamburger.png"
+        alt="hamburger"
+      />
+      <h1>Who we are?</h1>
+      <img class="right" src="image/island.png" alt="island" />
+
+      <nav style="display: none" class="sidenav">
+        <ul>
+          <li><a href="home.html" style="color: chocolate">Home Page</a></li>
+          <li><a href="who.html" style="color: green">Author</a></li>
+          <li><a href="bahrain.html">Bahrain, Middle East</a></li>
+          <li><a href="boracay.html">Boracay, the Philippines</a></li>
+          <li><a href="maldives.html">Maldives, the Indian Ocean</a></li>
+          <li><a href="uae.html">Palm Jumeirah & Bluewaters Island, UAE</a></li>
+          <li><a href="pei.html">PEI, Canada</a></li>
+          <li><a href="scotland.html">Isle of Skye, Scotland, UK</a></li>
+          <li><a href="singapore.html">Singapore, Southeast Asia</a></li>
+          <li><a href="taiwan.html">Taiwan, Southeast Asia</a></li>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <h1>Rabab</h1>
+        <p style="font-size: x-large">
+          Hello, my name is Rabab, I am from Egypt and welcome to my islands’
+          adventures. Before coming to Prince Edward Island, I used to be a
+          flight attendant for 15 and a half years. I had the opportunity to
+          visit some warm water tropical islands back then. I’m going to share
+          my personal experience about those islands here on this website, as
+          well as some of the photos that I managed to capture and I still have
+          access to. Prince Edward Island is considered the very first cold
+          water island experience to me which I’m also going to talk about.
+          Currently, I’m doing a Master of Arts in Island Studies at the
+          University of Prince Edward Island, and I met my classmate Henry in
+          this course who also visited a lot of wonderful islands. Henry, as
+          well, will share his insight into some of his amazing trips, and we
+          are both creating the website for this purpose. Our objective is to
+          build a website that will talk about the islands we have been to, and
+          the concept of Islandness from our own point of view and our personal
+          travel encounters.
+        </p>
+        <img src="image/Rabab.png" alt="Rabab" class="imginword" />
+      </div>
+      <div>
+        <h1>Henry</h1>
+        <p style="font-size: x-large">
+          Hello, my name is Rabab, I am from Egypt and welcome to my islands’
+          adventures. Before coming to Prince Edward Island, I used to be a
+          flight attendant for 15 and a half years. I had the opportunity to
+          visit some warm water tropical islands back then. I’m going to share
+          my personal experience about those islands here on this website, as
+          well as some of the photos that I managed to capture and I still have
+          access to. Prince Edward Island is considered the very first cold
+          water island experience to me which I’m also going to talk about.
+          Currently, I’m doing a Master of Arts in Island Studies at the
+          University of Prince Edward Island, and I met my classmate Henry in
+          this course who also visited a lot of wonderful islands. Henry, as
+          well, will share his insight into some of his amazing trips, and we
+          are both creating the website for this purpose. Our objective is to
+          build a website that will talk about the islands we have been to, and
+          the concept of Islandness from our own point of view and our personal
+          travel encounters.
+        </p>
+        <img
+          src="image/Rabab.png"
+          alt="Rabab"
+          style="max-width: 100%; height: auto"
+        />
+      </div>
+    </main>
+    <footer>
+      This Project is Supervised by Dr. Laurie Brinklow<br />
+      <small>All right Reserved@2023</small>
+    </footer>
+  </body>
+</html>

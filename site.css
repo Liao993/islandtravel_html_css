@@ -1,0 +1,182 @@
+/* set everything in box-model to zero*/
+html,
+body,
+header,
+div,
+h3,
+p,
+main,
+nav,
+ul,
+li,
+footer {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+/*Homepage as seen at 1400px wide*/
+body {
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1400px;
+  font-size: 20px;
+}
+/*change color for header*/
+header {
+  display: block;
+  background-color: darkblue;
+  height: 50px;
+}
+
+/*for hamburger.png*/
+.left {
+  width: 5%;
+  height: 100%;
+  float: left;
+}
+/*for paddlie-white.png*/
+.right {
+  width: 5%;
+  height: 100%;
+  float: right;
+}
+
+/*hamburger.png, title, paddle-white.png inline*/
+header > h1 {
+  display: inline-block;
+  text-align: center;
+  width: 85%;
+  color: white;
+  margin-top: 5px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+/*navigation bar without bulletin points*/
+nav > ul {
+  margin-top: 0px;
+  list-style-type: none;
+  padding-left: 0;
+}
+nav > ul > li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+nav > ul > li > a {
+  color: white;
+}
+
+/*navigation shadow*/
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 18%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top layer */
+  top: 50px;
+  background-color: darkblue;
+  /*overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 5px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/*main content, including the image must get no wider than 1200px*/
+
+main {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+.contentmain {
+  max-width: 1200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+p {
+  padding-bottom: 25px;
+}
+
+h4 {
+  color: rgb(0, 153, 255);
+}
+
+.myimg {
+  max-width: 100%;
+}
+
+.imginword {
+  padding-top: 0px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: "auto";
+  left: 30%;
+}
+
+.imginwordtwo {
+  padding-top: 0px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: "auto";
+  left: 30%;
+  width: 595px;
+  height: 600px;
+}
+.imginwordthree {
+  padding-top: 0px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: "auto";
+  left: 30%;
+  width: 390px;
+  height: 400px;
+}
+.wordforimage {
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+/*words on the image*/
+.centered {
+  position: absolute;
+  color: white;
+  text-align: center;
+  left: 50%;
+  font-size: 60px;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding: 3px;
+  color: black;
+}
+
+/*
+Responsive Desing for
+(1) Below 1200px the main content must be 100% across the screen
+(2) Below 800px all font sizes must change
+*/
+@media screen and (max-width: 1200px) {
+  header,
+  main {
+    width: 100%; /* Below 1200px the main content must be 100% across the screen */
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 80%;
+  }
+  .centered {
+    font-size: 48px;
+  }
+}

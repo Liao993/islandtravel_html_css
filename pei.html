@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--Responsive design: viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link to style.css file-->
+    <link rel="stylesheet" href="site.css" />
+
+    <title>Boracay</title>
+
+    <!--joggle function-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("input").click(function () {
+          $("nav").toggle();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <!--menu button, title, logo,-->
+      <input
+        class="left"
+        type="image"
+        src="image/hamburger.png"
+        alt="hamburger"
+      />
+      <h1>PEI, Canada</h1>
+      <img class="right" src="image/island.png" alt="island" />
+
+      <nav style="display: none" class="sidenav">
+        <ul>
+          <li><a href="home.html" style="color: chocolate">Home Page</a></li>
+          <li><a href="who.html" style="color: green">Author</a></li>
+          <li><a href="bahrain.html">Bahrain, Middle East</a></li>
+          <li><a href="boracay.html">Boracay, the Philippines</a></li>
+          <li><a href="maldives.html">Maldives, the Indian Ocean</a></li>
+          <li><a href="uae.html">Palm Jumeirah & Bluewaters Island, UAE</a></li>
+          <li><a href="pei.html">PEI, Canada</a></li>
+          <li><a href="scotland.html">Isle of Skye, Scotland, UK</a></li>
+          <li><a href="singapore.html">Singapore, Southeast Asia</a></li>
+          <li><a href="taiwan.html">Taiwan, Southeast Asia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contentmain"></main>
+    <footer>
+      This Project is Supervised by Dr. Laurie Brinklow<br />
+      <small>All right Reserved@2023</small>
+    </footer>
+  </body>
+</html>
