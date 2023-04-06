@@ -141,6 +141,9 @@ h4 {
   margin-bottom: 0px;
   padding-top: 0px;
 }
+.ref {
+  font-size: xx-small;
+}
 
 /*words on the image*/
 .centered {
